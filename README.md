@@ -6,7 +6,7 @@ Inspired by [echarts5-canvas-ssr](https://github.com/mosliu/echarts5-canvas-ssr#
 
 - Update [echarts](https://echarts.apache.org/) to version `^5.4.*`. Support for some new features.
 
-- Use [skr canvas](https://github.com/Brooooooklyn/canvas) to instead of [node-canvas](https://github.com/Automattic/node-canvas).
+- Use [skr canvas](https://github.com/Brooooooklyn/canvas) to instead of [node-canvas](https://github.com/Automattic/node-canvas).There is no need to install additional dependencies and the performance is excellent.
 
 - Use `cluster` for efficiency.
 
@@ -24,14 +24,14 @@ docker run --name echarts-ssr-server-instance -dp 10086:10086 -v echarts-fonts:/
 
 ```
 
-**Note:**Install the package.json dependency inside docker.
+**Note**: Install the package.json dependency inside docker.
 
 
 Body of `POST` Request :
 
 Parameter | Type | Description
 ----- | ----- | -----
-`type` | `'png'\|'svg'` | Response content type, if `type` is `'png'`, return `Buffer`.if `type` is `'svg'`, return a Base64-encoded svg string.
+`type` | `'png'\|'svg'` | Response content type, if `type` is `'png'`, return `Buffer`.if `type` is `'svg'`, return a Base64-encoded svg string.Defaults to `'png'`.
 `option`| `EchartCoreOption`| Options of echarts
 `width`| `number \| string` | Width of the chart
 `height`| `number \| string` | Height of the chart
