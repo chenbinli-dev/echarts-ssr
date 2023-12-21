@@ -31,8 +31,8 @@ Body of `POST` Request :
 
 Parameter | Type | Description
 ----- | ----- | -----
-`type` | `'png' | 'svg'` | Response content type, if `type` is `'png'`, return `Buffer`.if `type` is `'svg'`, return a Base64-encoded svg string.
+`type` | `'png'\|'svg'` | Response content type, if `type` is `'png'`, return `Buffer`.if `type` is `'svg'`, return a Base64-encoded svg string.
 `option`| `EchartCoreOption`| Options of echarts
-`width`| `number | string` | Width of the chart
-`height`| `number | string` | Height of the chart
+`width`| `number \| string` | Width of the chart
+`height`| `number \| string` | Height of the chart
 
