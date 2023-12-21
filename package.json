@@ -1,0 +1,23 @@
+{
+  "name": "echarts-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.44",
+    "echarts": "^5.4.3",
+    "json5": "^2.2.3",
+    "safe-eval": "^0.4.1"
+  }
+}
