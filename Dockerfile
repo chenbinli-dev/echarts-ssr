@@ -25,10 +25,10 @@ ENV WORKER_PROCESSES=8
 # Simple verification for the server.
 ENV AUTHORIZATION="Bearer 123"
 
-# The hostname of node server. Default is "0.0.0.0".
+# The hostname of node server. Defaults to "0.0.0.0".
 ENV HOST="0.0.0.0"
 
-# The port of node server.Make sure the ports are consistent.Default is 7654.
+# The port of node server.Make sure the ports are consistent.Defaults to 7654.
 ENV PORT=10086
 
 # This value determines the resolution of the chart and defaults to window.devicePixelRatio in browsers.
