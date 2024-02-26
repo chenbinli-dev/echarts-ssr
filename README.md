@@ -1,8 +1,8 @@
-# Echarts SSR
+# Echarts SSR Service
 
 Inspired by [echarts5-canvas-ssr](https://github.com/mosliu/echarts5-canvas-ssr#readme)
 
-## Changes
+## Changes & Improvements
 
 - Update [echarts](https://echarts.apache.org/) to version `^5.4.*`. Support for some new features.
 
@@ -14,7 +14,7 @@ Inspired by [echarts5-canvas-ssr](https://github.com/mosliu/echarts5-canvas-ssr#
 
 - Support parsing Using functions in echarts option.
 
-## Uasge
+## Usage
 
 ```sh
 
