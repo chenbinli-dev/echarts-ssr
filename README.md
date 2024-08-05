@@ -24,17 +24,17 @@ docker run --name echarts-ssr-server-instance -dp 10086:10086 -v echarts-fonts:/
 
 ```
 
-**Note**: Install the package.json dependency inside docker.
+**Note**: Install the `package.json` dependencies inside the docker.
 
 
 Body of `POST` Request :
 
 Parameter | Type | Description
 ----- | ----- | -----
-`type` | `'png'\|'svg'` | Response content type, if `type` is `'png'`, return `Buffer`.if `type` is `'svg'`, return a Base64-encoded svg string.Defaults to `'png'`.
-`option`| `EchartCoreOption`| Options of echarts
-`width`| `number \| string` | Width of the chart
-`height`| `number \| string` | Height of the chart
+`type` | `'png'\|'svg'` | Type of Response content. if the `type` value is `'png'`, the `Buffer` type data is returned. if the `type` value is `'svg'`, the Base64-encoded svg string is returned. Defaults to `'png'`.
+`option`| `EchartCoreOption`| Options to configure Echart.
+`width`| `number \| string` | Chart width.
+`height`| `number \| string` | Chart height.
 
 ## Custom Deployment
 
