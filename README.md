@@ -1,6 +1,12 @@
 # Echarts SSR Service
 
-Inspired by [echarts5-canvas-ssr](https://github.com/mosliu/echarts5-canvas-ssr#readme)
+<div align="center">
+  
+📘English|[中文](./README.zh-CN.md).
+
+</div>
+
+> Inspired by [echarts5-canvas-ssr](https://github.com/mosliu/echarts5-canvas-ssr#readme).
 
 ## Changes & Improvements
 
@@ -12,7 +18,7 @@ Inspired by [echarts5-canvas-ssr](https://github.com/mosliu/echarts5-canvas-ssr#
 
 - Support for two types of response,including image buffer and SVG string.
 
-- Support parsing Using functions in echarts option.
+- Support parsing functions in echarts option.
 
 ## Usage
 
@@ -38,7 +44,7 @@ Parameter | Type | Description
 
 ## Custom Deployment
 
- You can customize the `ENV` variables in `Dockfile` to change default configurations.
+ You can customize the `ENV` variables in `Dockfile` to modify the default configurations.
 
 ``` Dockfile
 # The worker thread number.
