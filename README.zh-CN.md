@@ -41,6 +41,19 @@ docker run --name echarts-ssr-server-instance -dp 10086:10086 -v echarts-fonts:/
 | `width`  | `number \| string` | 图图表宽度                                                                                                                                     |
 | `height` | `number \| string` | 图表高度                                                                                                                                       |
 
+如果你需要在 echarts 选项中使用函数，请将它以字符串的形式发送。例如:
+
+```json
+
+{
+  "legend": {
+    "data": ["Sales", "Marketing", "Technology"],
+    "formatter": "(name) => name.toUpperCase()"
+  }
+}
+
+```
+
 ## 自定义部署
 
 你可以在`Dockfile`中自定义`ENV`变量来修改默认配置。
